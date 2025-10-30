@@ -1,0 +1,171 @@
+.hd {
+    background-color: white;
+    color: black;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.unicorn {
+    margin-right: 20px;
+}
+
+.dropdown {
+    margin-left: 20px;
+}
+
+.searchform {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    margin-left: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    z-index: 0;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-item img {
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+    transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-control-prev {
+    left: 15px;
+}
+
+.carousel-control-next {
+    right: 15px;
+}
+
+.carousel-item {
+    transition: opacity 0.8s ease-in-out;
+}
+
+.mid-content {
+    display: flex;
+}
+
+.discription {
+    width: 400px;
+    margin-right: auto;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 40px;
+    top: 30%;
+}
+
+.span {
+    font-size: xx-large;
+    width: 50%;
+    justify-self: start;
+    top: 30%;
+}
+
+.span2 {
+    background-color: cyan;
+    width: 150px;
+    color: black;
+}
+
+#Quantity-selector {
+    width: 45px;
+    height: 40px;
+}
+
+#add-cart-btn {
+    background-color: rgba(255, 38, 0, 0.822);
+    margin-top: 50px;
+}
+
+.tabs {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    gap: 10px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab.active {
+    border-color: #ccc #ccc white;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+
+.tab-content {
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 5px;
+    padding: 15px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.footer {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.similar-item {
+    display: flex;
+}
